@@ -11,7 +11,7 @@
 	pp = pull
 	ds = diff --staged
 	# Prints out a summary of your last 24 hours (accounts for weekends) activity useful for daily standup
-	std = !$HOME/bin/standuplog.sh
+	std = !$DOTFILES/bin/standuplog.sh
 
 	# View the current working tree status using the short format
 	st = status -s
@@ -22,7 +22,7 @@
 	lg = log --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold magenta)<a:%an> %C(blue)<c:%cn> %Creset' --abbrev-commit --date=relative
 	long = log --decorate --pretty=format:'%Cred%h%Creset - %s %Cgreen(%cr) %C(bold magenta)<a:%an> %C(blue)<c:%cn> %Creset %n%b'
 
-	unbuilt = !$HOME/bin/unbuilt.sh
+	unbuilt = !$DOTFILES/bin/unbuilt.sh
 
 	# Show the diff between the latest commit and the current state
 	d = !"git diff-index --quiet HEAD -- || clear; git --no-pager diff --patch-with-stat"
