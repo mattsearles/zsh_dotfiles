@@ -24,10 +24,13 @@ fi
 brew update
 brew upgrade
 
-brew install wget vim jenv grep openssh screen php ack git ssh-copy-id tree gcc
+brew install wget vim jenv grep openssh screen php ack git ssh-copy-id tree gcc gh p7zip telnet tree zlib zsh-syntax-highlighting
 
 #ruby prerequisite
 brew install autoconf automake gdbm gmp libksba libtool libyaml openssl pkg-config readline
+
+# work apps
+brew install liquibase maven@3.2 petere/postgresql/postgresql-common petere/postgresql/postgresql@13 tomcat@8
 
 #ask for sudo password upfront
 sudo -v
@@ -48,18 +51,26 @@ apps=(
 	gitup
 	handbrake
 	iterm2
+	microsoft-word
+	microsoft-excel
+	microsoft-powerpoint
+	nordvpn
 	opera
+	pgadmin4
 	skype
 	spectacle
 	slack
 	springtoolsuite
 	sublime-text
 	textmate
+	tibco-jaspersoft-studio
 	vlc
 	vagrant
 	vagrant-manager
 	virtualbox
+	virtualbox-extension-pack
 	whatsapp
+	zoomus
 )
 
 echo "installing apps..."
